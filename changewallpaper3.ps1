@@ -1,7 +1,7 @@
 $path = 'C:\Users\Public\Pictures\wallpaper'
 mkdir $path
 $fullpath = $path + '\wallpaper.jpg'
-$wallpaperurl = 'https://github.com/pcanneddu/MyRepo/blob/main/pexels-arshad-sutar-1749303.jpg'
+$wallpaperurl = 'https://images8.alphacoders.com/430/430944.jpg'
 $wc=new-object system.net.webclient
 $wc.UseDefaultCredentials = $true
 $wc.DownloadFile($wallpaperurl, $fullpath)
