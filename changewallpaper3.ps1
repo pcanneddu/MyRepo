@@ -6,3 +6,4 @@ $wc=new-object system.net.webclient
 $wc.UseDefaultCredentials = $true
 $wc.DownloadFile($wallpaperurl, $fullpath)
 set-itemproperty -path 'HKCU:Control Panel\Desktop' -name WallPaper -value $fullpath
+rundll32.exe user32.dll, UpdatePerUserSystemParameters
